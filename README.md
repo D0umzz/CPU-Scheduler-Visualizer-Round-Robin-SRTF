@@ -5,7 +5,7 @@ web-based CPU Scheduling Simulator comparing Round Robin and SRTF. Built with JS
 
 ## 🚀 Live Demo
 
-> **[Insert your GitHub Pages link here if applicable]**
+> **https://d0umzz.github.io/CPU-Scheduler-Visualizer-Round-Robin-SRTF/**
 
 ---
 
