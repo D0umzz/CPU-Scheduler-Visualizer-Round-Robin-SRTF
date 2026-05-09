@@ -1,0 +1,145 @@
+:root {
+  --bg: #0f0f10;
+  --bg2: #18181b;
+  --bg3: #1e1e22;
+  --border: #ffffff14;
+  --text: #e8e8e8;
+  --muted: #888;
+  --rr: #7f77dd;
+  --srtf: #1d9e75;
+  --mono: "JetBrains Mono", monospace;
+  --in: #3a0a0a;
+  --inpbut: #eb1531;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--mono);
+  padding: 2rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.panel {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border-top: 3px solid var(--muted);
+}
+.inputs {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  height: 30px;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+  width: fit-content;
+}
+.panel-rr {
+  border-top-color: var(--rr);
+}
+.panel-srtf {
+  border-top-color: var(--srtf);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+input[type="number"] {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  width: 60px;
+  text-align: center;
+}
+
+.process-row {
+  display: grid;
+  grid-template-columns: 40px 1fr 1fr 40px;
+  gap: 10px;
+  margin-bottom: 8px;
+  align-items: center;
+}
+.btn {
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg3);
+  color: white;
+  font-family: var(--mono);
+  transition: 0.2s;
+}
+.btn:hover {
+  background: #2a2a2e;
+}
+
+.gantt-container {
+  margin: 20px 0;
+}
+.gantt-bar {
+  display: flex;
+  height: 35px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #222;
+}
+.gantt-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: bold;
+  min-width: 2px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+  margin-top: 15px;
+}
+th {
+  color: var(--muted);
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid var(--border);
+}
+td {
+  padding: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.stats {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+.stat-card {
+  flex: 1;
+  background: var(--bg3);
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+.stat-val {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--rr);
+}
+.inp {
+  color: var(--inpbut);
+  background-color: var(--in);
+}
